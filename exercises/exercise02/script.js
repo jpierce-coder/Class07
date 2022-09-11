@@ -5,9 +5,12 @@ function parent(x) {
   };
 }
 
-const remember = parent("remembers me");
+// Called the second function after the first one
+const remember = parent("remembers me")();
 // Seems like the variable x would be gone after
 // parent is executed, but it's not.
 
-closure();
+// closure();
 // Return "remembers me"
+
+console.log(remember);
